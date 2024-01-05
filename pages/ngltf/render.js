@@ -36,8 +36,8 @@ export default function (canvas, THREE) {
 
     new RGBELoader()
       .setDataType(THREE.UnsignedByteType)
-      .setPath('https://threejs.org/examples/textures/equirectangular/')
-      .load('pedestrian_overpass_2k.hdr', function (texture) {
+      .setPath('https://github.com/YANGJIAXUE2022510/test/raw/main/pages/primitives/')
+      .load('house03.hdr', function (texture) {
 
         var cubeGenerator = new EquirectangularToCubeGenerator(texture, { resolution: 1024 });
         cubeGenerator.update(renderer);
